@@ -4,8 +4,80 @@
   <head>
     <meta charset="UTF-8" />
     <title>My HTML Page</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+        background: #f3f4f6;
+        color: #1f2933;
+      }
+
+      header {
+        background: #111827;
+        color: #f9fafb;
+        box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+      }
+
+      .site-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 960px;
+        margin: 0 auto;
+        padding: 1rem 1.5rem;
+      }
+
+      .site-nav__logo {
+        font-size: 1.25rem;
+        font-weight: 600;
+        letter-spacing: 0.05em;
+      }
+
+      .site-nav__links {
+        list-style: none;
+        display: flex;
+        gap: 1.5rem;
+        margin: 0;
+        padding: 0;
+      }
+
+      .site-nav__links a {
+        text-decoration: none;
+        color: #f9fafb;
+        font-weight: 500;
+        transition: color 0.2s ease;
+      }
+
+      .site-nav__links a:hover,
+      .site-nav__links a:focus {
+        color: #60a5fa;
+      }
+
+      main {
+        max-width: 960px;
+        margin: 3rem auto;
+        padding: 0 1.5rem;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello from my HTML project v2!</h1>
+    <header>
+      <nav class="site-nav">
+        <div class="site-nav__logo">My HTML Page</div>
+        <ul class="site-nav__links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <h1 id="home">Hello from my HTML project v2!</h1>
+      <p>
+        This simple landing page now includes a navigation bar so you can quickly
+        jump to each section of the site.
+      </p>
+    </main>
   </body>
 </html>
